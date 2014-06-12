@@ -10,3 +10,6 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::get('/', function(){
+	return 'hello';
+});
