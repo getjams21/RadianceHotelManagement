@@ -15,4 +15,9 @@ $(document).ready(function(){
 		  		$("#alert-verify-password-ok").addClass('hide');
 		  }
 		});
+
+		$(".icn-click").hover(
+		    function(){$(this).animate({fontSize:'48px',color:'#beff00'}, 300);},        
+		    function(){$(this).animate({fontSize:'32px'}, 300);}
+		);
 });
