@@ -3,7 +3,10 @@
 class PageController extends BaseController {
 
 	public function index(){
-		return 'Welcome to Radiance Hotel!';
+		return View::make('forms.reservation', ['title'=>'Radiance Hotel']);
 	}
 
+	public function store(){
+		return Redirect::back();
+	}
 }

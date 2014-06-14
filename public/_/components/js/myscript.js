@@ -15,4 +15,16 @@ $(document).ready(function(){
 		  		$("#alert-verify-password-ok").addClass('hide');
 		  }
 		});
+
+		//animate resizing font when mouse hovers to an icon on the side bar
+		$(".icn-click").hover(
+		    function(){
+		    	$(this).animate({fontSize:'48px', color:'#beff00'}, 200);
+		    	$(this).popover('show');
+		    },        
+		    function(){
+		    	$(this).animate({fontSize:'32px'}, 200);
+		    	$(this).popover('hide');
+		    }
+		);
 });

@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function(){
-	return View::make('home');
-});
+Route::resource('page', 'PageController');
