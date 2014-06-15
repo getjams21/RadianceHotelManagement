@@ -9,4 +9,5 @@ class PageController extends BaseController {
 	public function store(){
 		return Redirect::back();
 	}
+
 }
