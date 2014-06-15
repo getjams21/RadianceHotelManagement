@@ -27,4 +27,7 @@ $(document).ready(function(){
 		    	$(this).popover('hide');
 		    }
 		);
+		$('#datepicker').datepicker();
+		$('#datepicker2').datepicker();
+		$('#calendar-show').datepicker();
 });
