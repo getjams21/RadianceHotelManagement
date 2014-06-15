@@ -11,6 +11,9 @@ body {
 .formx{
 	background: rgba(61, 62, 60, 0.5); 
 	margin-top: 100px;
+	margin-bottom: 100px;
+	overflow: auto;
+	height:550px;
 }
 .side-col{
 	background: black; 
@@ -77,3 +80,17 @@ hr{
 #calendar-show{
 	cursor: pointer;
 }
+
+					::-webkit-scrollbar
+						{
+						  width: 12px;  /* for vertical scrollbars */
+						  height: 12px; /* for horizontal scrollbars */
+						}
+						::-webkit-scrollbar-track
+						{
+						  background: rgba(0, 0, 0, 0.1);
+						}
+						::-webkit-scrollbar-thumb
+						{
+						  background: rgba(0, 0, 0, 0.5);
+						}
