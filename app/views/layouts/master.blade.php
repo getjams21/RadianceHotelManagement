@@ -7,12 +7,14 @@
 		{{ HTML::style('_/css/mystyle.css') }}
 		{{ HTML::style('fontello/css/settings.css') }}
 	</head>
+
 	<body Background="_/fonts/images/dining.PNG" class="img-responsive" bgproperties="fixed">
 		<font face="Segoe UI" color="White">
 		<div class="container-fluid">
 		  <div class="row">
 		    <?php include(app_path().'/views/layouts/main-menu.blade.php'); ?>
 		    @yield('form')
+		    @yield('rooms')
 		   <?php include(app_path().'/views/layouts/sidemenu.blade.php'); ?>
 		  </div>
 		</div>
@@ -22,3 +24,6 @@
 		{{ HTML::script('_/js/myscript.js')}}
 	</body>
 </html>
+<!doctype html>
+<html>
+

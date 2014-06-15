@@ -12,3 +12,8 @@
 */
 
 Route::resource('page', 'PageController');
+Route::get('/',function()
+	{
+		return Redirect::route('page.index');
+	});
+

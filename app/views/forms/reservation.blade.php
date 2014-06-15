@@ -94,8 +94,13 @@
 															<label><p><h4>Total Rental Fee: <font color="#c94431"><b>Php 5,000.00</b></font></h4></p></label>
 														</center>
 													<hr class="hr-prop" style="margin-top:17px;">
-												</div>												
-											</div>
+												</div>			
+										</div>
+											<center>
+												<div style="width:30%;" >
+												{{ Form::Submit('Submit',['class'=>'btn btn-success btn-properties-res']) }}
+												</div>
+											</center>
 										</div>	
 									{{ Form::close() }}
 								</font>
