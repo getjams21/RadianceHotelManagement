@@ -8,7 +8,9 @@
 				<a href="/rooms"><button type="button" class="btn btn-success btn-properties-res"><span class="icon-login fontello-large"></span> Rooms</button></a>
 			</div>
 			<div class="row">
-				<button type="button" class="btn btn-success btn-properties-res"><span class="icon-lodging fontello-large"></span> Housekeeping</button>
+				<a href="/housekeeping">
+					<button type="button" class="btn btn-success btn-properties-res"><span class="icon-lodging fontello-large"></span> Housekeeping</button>
+				</a>
 			</div>
 		</div>
 	</center>

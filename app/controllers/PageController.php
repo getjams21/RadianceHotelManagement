@@ -13,4 +13,8 @@ class PageController extends BaseController {
 	public function rooms(){
 		return View::make('forms.rooms', ['title'=>'Radiance Hotel']);
 	}
+
+	public function houseKeeping(){
+		return View::make('forms.housekeeping', ['title'=>'Radiance Hotel']);
+	}
 }

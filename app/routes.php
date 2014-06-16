@@ -17,3 +17,4 @@ Route::get('/',function()
 		return Redirect::route('page.index');
 	});
 Route::get('rooms', 'PageController@rooms');
+Route::get('housekeeping', 'PageController@houseKeeping');
