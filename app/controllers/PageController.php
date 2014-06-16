@@ -21,4 +21,8 @@ class PageController extends BaseController {
 			'icon'=>'icon-login'
 			]);
 	}
+
+	public function houseKeeping(){
+		return View::make('forms.housekeeping', ['title'=>'Radiance Hotel']);
+	}
 }
