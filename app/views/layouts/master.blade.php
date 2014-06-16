@@ -14,7 +14,7 @@
 		  <div class="row">
 		    <?php include(app_path().'/views/layouts/main-menu.blade.php'); ?>
 		    @yield('form')
-		    @yield('rooms')
+		    @yield('rooms')	    
 		   <?php include(app_path().'/views/layouts/sidemenu.blade.php'); ?>
 		  </div>
 		</div>
