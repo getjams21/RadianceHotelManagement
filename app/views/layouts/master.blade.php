@@ -10,6 +10,7 @@
 
 	<body Background="_/fonts/images/dining.PNG" class="img-responsive" bgproperties="fixed">
 		<font face="Segoe UI" color="White">
+		@yield('header')
 		<div class="container-fluid">
 		  <div class="row">
 		    <?php include(app_path().'/views/layouts/main-menu.blade.php'); ?>

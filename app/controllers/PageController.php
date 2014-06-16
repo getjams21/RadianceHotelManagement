@@ -3,7 +3,11 @@
 class PageController extends BaseController {
 
 	public function index(){
-		return View::make('forms.reservation', ['title'=>'Radiance Hotel']);
+		return View::make('forms.reservation', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Reservation',
+			'icon'=>'icon-book'
+			]);
 	}
 
 	public function store(){
@@ -11,7 +15,11 @@ class PageController extends BaseController {
 	}
 
 	public function rooms(){
-		return View::make('forms.rooms', ['title'=>'Radiance Hotel']);
+		return View::make('forms.rooms', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Rooms',
+			'icon'=>'icon-login'
+			]);
 	}
 
 	public function houseKeeping(){
