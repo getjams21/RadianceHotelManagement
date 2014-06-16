@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('form')
+<<<<<<< HEAD
 	<div class="col-xs-12 col-sm-6 col-md-8">
 		<div class="well formx">
 			<div class="container-fluid">
@@ -38,6 +39,58 @@
 												{{ Form::text('City','',array('class'=>'span3 form-control','placeholder'=>'City')) }}
 												{{ Form::text('Stateprovince','',array('class'=>'span3 form-control','placeholder'=>'State/Province')) }}
 												{{ Form::text('Country','',array('class'=>'span3 form-control','placeholder'=>'Country')) }}
+=======
+		<div class="col-xs-12 col-sm-6 col-md-8">
+			<div class="well formx">
+				<div class="container-fluid onload-slide">
+		  			<div class="row">
+	  					<center>
+	  						<div class="breadcrumb form-title-bc">
+	    						<font size="5">Reservation</font>
+	    					</div>
+	  					</center>
+		  			</div>
+		  			<div class="row">
+  						<div class="well">
+  							<div class="container-fluid">
+  								<font color="#161515">
+	  								{{ Form::open(['route'=>'page.store', 'class'=>'form-horizontal', 'rule'=>'form']) }}
+											<div class="form-group">
+											<h3> <span>Hotel Reservation Form</span> </h3>
+											<hr>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label><h4>Full Name</h4></label>
+													<br>
+													<div class="form-inline">
+														{{ Form::text('Firstname','',array('class'=>'span3 form-control textbox-control-m','placeholder'=>'First Name')) }}
+														<br>
+														{{ Form::text('Lastname','',array('class'=>'span3 form-control textbox-control-m','placeholder'=>'Last Name')) }}
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label><h4>Address</h4></label>
+													<br>
+													{{ Form::text('Streetaddress','',array('class'=>'span3 form-control textbox-control-l','placeholder'=>'Street Address')) }}
+													{{ Form::text('Streetaddress2','',array('class'=>'span3 form-control textbox-control-l','placeholder'=>'Street Address 2')) }}
+													<div class="form-inline">
+														{{ Form::text('City','',array('class'=>'span3 form-control','placeholder'=>'City')) }}
+														{{ Form::text('Stateprovince','',array('class'=>'span3 form-control','placeholder'=>'State/Province')) }}
+														{{ Form::text('Country','',array('class'=>'span3 form-control','placeholder'=>'Country')) }}
+													</div>
+												</div>
+												<div class="form-group">
+													<label><h4>Contact Number</h4></label>
+													<br>
+													{{ Form::text('ContactNo','',array('class'=>'span3 form-control textbox-control-l','placeholder'=>'Contact Number')) }}
+												</div>
+												<div class="form-group">
+													<label><h4>Email</h4></label>
+													{{ Form::text('Email','',array('class'=>'span3 form-control textbox-control-l','placeholder'=>'Email Address')) }}
+													<hr class="hr-prop">
+												</div>
+>>>>>>> 291ed755e5d0097fb4cd41939aa27b111feaa243
 											</div>
 										</div>
 										<div class="form-group">
