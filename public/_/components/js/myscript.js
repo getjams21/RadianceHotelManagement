@@ -29,5 +29,9 @@ $(document).ready(function(){
 		);
 		$('#datepicker').datepicker();
 		$('#datepicker2').datepicker();
-		$('#calendar-show').datepicker();
+
+		$(window).load(function(){
+			$(".onload-slide")
+				.animate({width:'100%',opacity:'1'}, 500);
+		});
 });

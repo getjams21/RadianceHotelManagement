@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('rooms')
+@section('form')
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<div class="well formx">
 				<div class="container-fluid">

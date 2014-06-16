@@ -10,4 +10,7 @@ class PageController extends BaseController {
 		return Redirect::back();
 	}
 
+	public function rooms(){
+		return View::make('forms.rooms', ['title'=>'Radiance Hotel']);
+	}
 }

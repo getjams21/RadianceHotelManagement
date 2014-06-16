@@ -2,7 +2,7 @@
 @section('form')
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<div class="well formx">
-				<div class="container-fluid">
+				<div class="container-fluid onload-slide">
 		  			<div class="row">
 	  					<center>
 	  						<div class="breadcrumb form-title-bc">
