@@ -23,6 +23,10 @@ class PageController extends BaseController {
 	}
 
 	public function houseKeeping(){
-		return View::make('forms.housekeeping', ['title'=>'Radiance Hotel']);
+		return View::make('forms.housekeeping', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Housekeeping',
+			'icon'=>'icon-lodging'
+			]);
 	}
 }

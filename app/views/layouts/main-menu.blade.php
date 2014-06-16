@@ -2,14 +2,14 @@
 	<center>
 		<div class="well menu-well">
 			<div class="row ">
-				<a href="/page"><button type="button" class="btn btn-success btn-properties-res" id="Reserve"> <span class="icon-book fontello-large "></span> Reservation</button></a>
+				<a href="/page"><button type="button" class="btn btn-success btn-properties-res" id="Reserve"> <span class="fontello-large "></span> Reservation</button></a>
 			</div>
 			<div class="row">
-				<a href="/rooms"><button type="button" class="btn btn-success btn-properties-res"><span class="icon-login fontello-large"></span> Rooms</button></a>
+				<a href="/rooms"><button type="button" class="btn btn-success btn-properties-res"><span class="fontello-large"></span> Rooms</button></a>
 			</div>
 			<div class="row">
 				<a href="/housekeeping">
-					<button type="button" class="btn btn-success btn-properties-res"><span class="icon-lodging fontello-large"></span> Housekeeping</button>
+					<button type="button" class="btn btn-success btn-properties-res"><span class="fontello-large"></span> Housekeeping</button>
 				</a>
 			</div>
 		</div>
