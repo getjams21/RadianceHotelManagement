@@ -14,11 +14,11 @@
 		<div class="container-fluid">
 		  <div class="row">
 		    <?php include(app_path().'/views/layouts/main-menu.blade.php'); ?>
-		    <div class="col-xs-12 col-sm-6 col-md-8">
-				<div class="well formx">
-					<div class="container-fluid onload-slide">
-		    			@yield('form')
-		    		</div>
+		    <div class="col-xs-12 col-sm-6 col-md-8 ">
+					<div class="well formx">
+						<div class="container-fluid onload-slide ">
+			    			@yield('form')
+		    			</div>
 		    	</div>
 		    </div>	    
 		   <?php include(app_path().'/views/layouts/sidemenu.blade.php'); ?>
