@@ -1,14 +1,6 @@
 @extends('layouts.master')
 @section('header')
-	<div class="well-nav breadcrumb">
-		<div class="col-md-4">
-			<div class="row">
-				<div class="container-fluid">
-					<span class="{{ $icon }} fontello-large">
-						{{ $subtitle }}
-					</span>
-				</div>
-			</div>
+		@include('includes.header')
 		</div>
 	</div>
 @stop
