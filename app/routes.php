@@ -12,9 +12,10 @@
 */
 
 Route::resource('page', 'PageController');
+Route::resource('rooms', 'RoomsController');
+
 Route::get('/',function()
 	{
 		return Redirect::route('page.index');
 	});
-Route::get('rooms', 'PageController@rooms');
 Route::get('housekeeping', 'PageController@houseKeeping');

@@ -14,14 +14,6 @@ class PageController extends BaseController {
 		return Redirect::back();
 	}
 
-	public function rooms(){
-		return View::make('forms.rooms', [
-			'title'=>'Radiance Hotel',
-			'subtitle'=>'Rooms',
-			'icon'=>'icon-login'
-			]);
-	}
-
 	public function houseKeeping(){
 		return View::make('forms.housekeeping', [
 			'title'=>'Radiance Hotel',
