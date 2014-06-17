@@ -25,11 +25,8 @@
 		  </div>
 		</div>
 		</font>
-		
-		{{ HTML::script('_/js/bootstrap.js') }}
-		{{ HTML::script('_/js/bootstrap-datepicker.js') }}
-		{{ HTML::script('_/js/jquery.fullscreen.js') }}
-		{{ HTML::script('_/js/myscript.js')}}
+	
+	@include('includes.footer')
 	</body>
 </html>
 
