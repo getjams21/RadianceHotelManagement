@@ -14,13 +14,6 @@
 @stop
 @section('form')
 	<div class="row">
-			<center>
-				<div class="breadcrumb form-title-bc">
-					<font size="5">House Keeping</font>
-				</div>
-			</center>
-	</div>
-	<div class="row">
 		<div class="well">
 			<div  class="container-fluid">
 				<div id="housekeepingForm">				

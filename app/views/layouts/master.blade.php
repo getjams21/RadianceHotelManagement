@@ -20,14 +20,15 @@
 		    			@yield('form')
 		    		</div>
 		    	</div>
-		    </div>	    
-		   <?php include(app_path().'/views/layouts/sidemenu.blade.php'); ?>
+		    </div>
+		    <?php include(app_path().'/views/layouts/sidemenu.blade.php'); ?>
 		  </div>
 		</div>
 		</font>
 		
 		{{ HTML::script('_/js/bootstrap.js') }}
 		{{ HTML::script('_/js/bootstrap-datepicker.js') }}
+		{{ HTML::script('_/js/jquery.fullscreen.js') }}
 		{{ HTML::script('_/js/myscript.js')}}
 	</body>
 </html>
