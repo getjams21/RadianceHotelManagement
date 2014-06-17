@@ -19,3 +19,4 @@ Route::get('/',function()
 		return Redirect::route('page.index');
 	});
 Route::get('housekeeping', 'PageController@houseKeeping');
+Route::get('new-reservation', 'PageController@newReservation');

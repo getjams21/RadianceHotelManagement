@@ -21,4 +21,11 @@ class PageController extends BaseController {
 			'icon'=>'icon-lodging'
 			]);
 	}
+	public function newReservation(){
+		return View::make('forms.new-reservation', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Reservation',
+			'icon'=>'icon-book'
+			]);
+	}
 }
