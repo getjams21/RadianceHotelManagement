@@ -18,3 +18,4 @@ Route::get('/',function()
 	});
 Route::get('rooms', 'PageController@rooms');
 Route::get('housekeeping', 'PageController@houseKeeping');
+Route::get('new-reservation', 'PageController@newReservation');
