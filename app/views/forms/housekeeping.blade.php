@@ -19,6 +19,15 @@
 						    <option>Staff3</option>
 						</select>
 					</div>
+
+					<div class="form-group">
+						<label for="rooms"> Assign Room</label>
+						<select name="staff" class="form-control">
+						 	<option>Room1</option>
+						    <option>Room2</option>
+						    <option>Room3</option>
+						</select>
+					</div>
 					
 					<div class="form-group">
 						<label for="task"> Task</label>
