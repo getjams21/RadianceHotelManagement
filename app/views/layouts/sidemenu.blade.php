@@ -25,9 +25,6 @@
 			<div class="row">
 				<span class="icon-tag fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Set promotion such as free night, last minute or package"></span>
 			</div>
-			<div class="row">
-				<span class="icon-tags fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Setup amount of room, room rate and amount of night on a day"></span>
-			</div>
 		</div>
 	</center>
 </div>
