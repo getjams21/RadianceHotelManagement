@@ -14,11 +14,11 @@
 @stop
 @section('form')
 	<div class="row">
-			<center>
-				<div class="breadcrumb form-title-bc">
-					<font size="5">House Keeping</font>
-				</div>
-			</center>
+		<center>
+			<div class="breadcrumb form-title-bc">
+				<font size="5">House Keeping</font>
+			</div>
+		</center>
 	</div>
 	<div class="row">
 		<div class="well">
@@ -34,21 +34,22 @@
 						    <option>Staff3</option>
 						</select>
 					</div>
+					
 					<div class="form-group">
 						<label for="task"> Task</label>
 						<div>
-							<span><input type="checkbox"> check all </span>
+							<span><input type="checkbox" id="chckall"> check all </span>
 							<hr>						
 						</div>
 					</div>
 					<div class="form-group">
 						<ul class="nav nav-pills nav-stacked">
-							<li><span><input type="checkbox"> Changing the bed linen </span></li>
-							<li><span><input type="checkbox"> Making beds </span></li>
-							<li><span><input type="checkbox"> Vacuuming floors </span></li>
-							<li><span><input type="checkbox"> Treating stains or damage to polished wood </span></li>
-							<li><span><input type="checkbox"> replenishing stocks of guest supplies such as shampoo and soap </span></li>
-							<li><span><input type="checkbox"> re-stocking drinks in the mini-bar </span></li>
+							<li><span><input type="checkbox" class="chckTask" value="Changing the bed linen"> Changing the bed linen </span></li>
+							<li><span><input type="checkbox" class="chckTask" value="Making beds"> Making beds </span></li>
+							<li><span><input type="checkbox" class="chckTask" value="Vacuuming floors"> Vacuuming floors </span></li>
+							<li><span><input type="checkbox" class="chckTask" value="Treating stains or damage to polished wood"> Treating stains or damage to polished wood </span></li>
+							<li><span><input type="checkbox" class="chckTask" value="replenishing stocks of guest supplies such as shampoo and soap"> replenishing stocks of guest supplies such as shampoo and soap </span></li>
+							<li><span><input type="checkbox" class="chckTask" value="re-stocking drinks in the mini-bar"> re-stocking drinks in the mini-bar </span></li>
 						</ul>						
 					</div>					
 				</div>				
