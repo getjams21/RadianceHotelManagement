@@ -68,38 +68,60 @@
 
 						<div class="tab-pane" id="hkdetails">
 							<!-- should be loop the result -->
-						 	<table class="table table-hover">
-							 	<tr>
-							 		<th>Status</th>
-							 		<th>Room</th>
-							 		<th>Category</th>
-							 		<th>Arrival</th>
-							 		<th>Departure</th>
-							 		<th>Person</th>
-							 		<th>Name</th>
-							 		<th>Note</th>
-							 	</tr>
-							 	<tr>
-							 		<td>Occupied</td>
-							 		<td>101</td>
-							 		<td>Delux Room</td>
-							 		<td>06/19/14</td>
-							 		<td>06/25/14</td>
-							 		<td>1</td>
-							 		<td>Marc Comia</td>
-							 		<td> -- </td>	
-							 	</tr>
-							 	<tr>
-							 		<td>Out of Order</td>
-							 		<td>102</td>
-							 		<td>Superior Room</td>
-							 		<td> -- </td>
-							 		<td> -- </td>
-							 		<td> -- </td>
-							 		<td> -- </td>
-							 		<td> Renovation </td>	
-							 	</tr>
+							<font color="#161515">
+						 	<table class="table table-hover">								
+								 	<tr class="info">
+								 		<th>Status</th>
+								 		<th>Room</th>
+								 		<th>Category</th>
+								 		<th>Arrival</th>
+								 		<th>Departure</th>
+								 		<th>Person</th>
+								 		<th>Name</th>
+								 		<th>Note</th>
+								 	</tr>
+								 	<tr class="success">
+								 		<td>Occupied</td>
+								 		<td>101</td>
+								 		<td>Delux Room</td>
+								 		<td>06/19/14</td>
+								 		<td>06/25/14</td>
+								 		<td>1</td>
+								 		<td>Marc Comia</td>
+								 		<td> -- </td>	
+								 	</tr>
+								 	<tr class="danger">
+								 		<td>Out of Order</td>
+								 		<td>102</td>
+								 		<td>Superior Room1</td>
+								 		<td> -- </td>
+								 		<td> -- </td>
+								 		<td> -- </td>
+								 		<td> -- </td>
+								 		<td> Renovation </td>	
+								 	</tr>
+								 	<tr class="success">
+								 		<td>Occupied</td>
+								 		<td>105</td>
+								 		<td>Superior Room2</td>
+								 		<td> 06/20/14 </td>
+								 		<td> 06/23/14 </td>
+								 		<td> 1 </td>
+								 		<td> Tsin Batiancila  </td>
+								 		<td> </td>	
+								 	</tr>
+								 	<tr class="success">
+								 		<td>Occupied</td>
+								 		<td>104</td>
+								 		<td>Delux Room2</td>
+								 		<td> 06/26/14 </td>
+								 		<td> 06/29/14 </td>
+								 		<td> 1 </td>
+								 		<td> Jay Mars  </td>
+								 		<td> </td>	
+								 	</tr>									
 							</table>
+							</font>
 						</div> <!-- tab hkdetails -->
 				</div> <!-- tabcontent -->								
 			</div>
