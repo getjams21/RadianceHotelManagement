@@ -48,6 +48,9 @@ body {
 	margin-right: 10px;
 	background-color: #fff;
 	height: 70px;
+	-webkit-box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.2);
 }
 .panel-prop:hover{
 	background-color: rgb(232,225,165);
@@ -77,9 +80,9 @@ body {
 .div-position{
 	position: fixed;
 }
-.form-title-bc{
+.form-title-bc,.roomsContainer{
 	/*width: 50%;*/
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 .fontello-large{
 	font-size: 32px;
@@ -149,4 +152,44 @@ hr{
 .tbl-prop {
 	padding-left: 30px;
 	padding-right: 30px;
+}
+.room{
+	float:left;
+	width:10%;
+	height:80px;
+	border-radius:5px;
+	font-size:25px;
+	padding-left:5px; 
+}
+.room-icn-prop{
+	padding-top: 14px;
+	background-color: #4ca454;
+}
+.room-number{
+	font-size:20px;
+	color:white;
+}
+.room-vacant{
+	background-color: #41A317;	
+}
+.room-vacant:hover{
+	background-color: #52D017;
+}
+.room-occupied{
+	background-color: #0041C2;
+}
+.room-occupied:hover{
+	background-color: #1589FF;
+}
+.room-alert{
+	background-color: #C11B17;
+}
+.room-alert:hover{
+	background-color: #F62817;
+}
+.room-process{
+	background-color: #CD7F32;
+}
+.room-process:hover{
+	background-color: #C7A317;
 }
