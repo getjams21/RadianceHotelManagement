@@ -13,15 +13,13 @@
 
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
+Route::resource('settings', 'SidebarController');
 Route::get('roomlist', 'RoomsController@roomlist');
-Route::resource('settings', 'SettingsController');
-
 Route::get('/',function()
 	{
 		return Redirect::route('page.index');
 	});
 Route::get('housekeeping', 'PageController@houseKeeping');
 Route::get('new-reservation', 'PageController@newReservation');
-
 Route::get('guest', 'PageController@guest');
 
