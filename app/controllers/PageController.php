@@ -3,7 +3,7 @@
 class PageController extends BaseController {
 
 	public function index(){
-		return View::make('forms.reservation', [
+		return View::make('forms.reservation.reservation', [
 			'title'=>'Radiance Hotel',
 			'subtitle'=>'Reservation',
 			'icon'=>'icon-book'
@@ -22,10 +22,17 @@ class PageController extends BaseController {
 			]);
 	}
 	public function newReservation(){
-		return View::make('forms.new-reservation', [
+		return View::make('forms.reservation.new-reservation', [
 			'title'=>'Radiance Hotel',
 			'subtitle'=>'Reservation',
 			'icon'=>'icon-book'
+			]);
+	}
+	public function guest(){
+		return View::make('forms.guest.guest', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Guest',
+			'icon'=>'icon-adult'
 			]);
 	}
 }

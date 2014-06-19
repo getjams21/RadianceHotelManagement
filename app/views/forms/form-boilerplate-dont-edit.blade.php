@@ -1,15 +1,6 @@
 @extends('layouts.master')
 @section('header')
-	<div class="well-nav breadcrumb">
-		<div class="col-md-4">
-			<div class="row">
-				<div class="container-fluid">
-					<span class="icon-book fontello-large">
-						{{ $subtitle }}
-					</span>
-				</div>
-			</div>
-		</div>
+	@include('includes.header')
 	</div>
 @stop
 
@@ -19,10 +10,14 @@
 
 @section('form')
 	<div class="row">
-		<font color="#161515">
-			<div class="well">
-				<h4>Form Body Here</h4>
+		<div class="well form-bg">
+			<div class="container-fluid">
+			<font color="#161515">
+				{{ Form::open() }}
+					
+				{{ Form::close() }}
+			</font><!-- default font color for body -->
 			</div>
-		</font><!-- default font color for body -->
-	</div><!-- row of form body -->
+		</div>
+	</div>
 @stop
