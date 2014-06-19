@@ -14,6 +14,7 @@
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
 Route::get('roomlist', 'RoomsController@roomlist');
+Route::resource('settings', 'SettingsController');
 
 Route::get('/',function()
 	{
@@ -21,3 +22,6 @@ Route::get('/',function()
 	});
 Route::get('housekeeping', 'PageController@houseKeeping');
 Route::get('new-reservation', 'PageController@newReservation');
+
+Route::get('guest', 'PageController@guest');
+
