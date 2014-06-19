@@ -47,7 +47,7 @@ class RoomsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return View::make('rooms.rooms', [
+		return View::make('rooms.roomdetails', [
 			'roomno' => $id,
 			'title'=>'Radiance Hotel',
 			'subtitle'=>'Rooms',
@@ -55,6 +55,15 @@ class RoomsController extends \BaseController {
 			]);
 	}
 
+	// public function details()
+	// {
+	// 	return View::make('rooms.roomdetails', [
+			
+	// 		'title'=>'Radiance Hotel',
+	// 		'subtitle'=>'Rooms',
+	// 		'icon'=>'icon-login'
+	// 		]);
+	// }
 
 	/**
 	 * Show the form for editing the specified resource.

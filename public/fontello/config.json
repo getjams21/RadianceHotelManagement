@@ -7,6 +7,12 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "2a6740fc2f9d0edea54205963f662594",
+      "css": "spin3",
+      "code": 59428,
+      "src": "fontelico"
+    },
+    {
       "uid": "bf882b30900da12fca090d9796bc3030",
       "css": "mail",
       "code": 59407,
@@ -52,6 +58,12 @@
       "uid": "671f29fa10dda08074a4c6a341bb4f39",
       "css": "bell-alt",
       "code": 59414,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f48ae54adfb27d8ada53d0fd9e34ee10",
+      "css": "trash-1",
+      "code": 59427,
       "src": "fontawesome"
     },
     {
@@ -163,6 +175,12 @@
       "src": "elusive"
     },
     {
+      "uid": "ad194658d0e68d781eb334d9c1099d6e",
+      "css": "lock-circled",
+      "code": 59429,
+      "src": "elusive"
+    },
+    {
       "uid": "19dae18c34431934a781773e241faec2",
       "css": "pencil-circled",
       "code": 59426,
@@ -172,6 +190,12 @@
       "uid": "c9bef3dc67fea47e94c4a5030ea64dad",
       "css": "clipboard",
       "code": 59403,
+      "src": "elusive"
+    },
+    {
+      "uid": "272e08e0e16226aadf94dcbf33aab2b2",
+      "css": "key-1",
+      "code": 59425,
       "src": "elusive"
     },
     {

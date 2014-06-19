@@ -20,3 +20,4 @@ Route::get('/',function()
 	});
 Route::get('housekeeping', 'PageController@houseKeeping');
 Route::get('new-reservation', 'PageController@newReservation');
+// Route::get('roomdetails', 'roomsController@details');

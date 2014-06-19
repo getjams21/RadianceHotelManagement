@@ -4,6 +4,7 @@
 	</div>
 </div>
 @stop
+
 @section('form')
 	<div class="row">
 		<div class="well roomsContainer">
