@@ -9,49 +9,96 @@
 		<div class="well form-bg">
 			<div  class="container-fluid">
 				<ul class="nav nav-tabs">
-				  <li><a href="#profile" data-toggle="tab">Assign</a></li>
-				  <li><a href="#messages" data-toggle="tab">House keeping Details</a></li>
+					<li class="active"><a href="#assign" data-toggle="tab">Assign</a></li>
+					<li><a href="#hkdetails" data-toggle="tab">House keeping Details</a></li>
 				</ul>
-				<div id="housekeepingForm">
-					<form method="post" action="">			
-						<div class="form-group">
-							<h3>House Keeping Assign</h3>
-							<hr>
-						    <label for="staff"> Assign Staff</label>
-							<select name="staff" class="form-control" style="width:200px">
-							 	<option>Staff1</option>
-							    <option>Staff2</option>
-							    <option>Staff3</option>
-							</select>
-						</div>
+				<div class="tab-content">
+					  	<div class="tab-pane active" id="assign">
+					  		<div id="housekeepingForm">
+								{{ Form::open() }}						
+									<div class="form-group">
+										<h3>House Keeping Assign</h3>
+										<hr>
+										{{ form::label('staff', 'Assign Staff') }}
+										
+										{{ form::select('staff', array('staff1'=>'staff1',
+																	   'staff2'=>'staff2',
+																	   'staff3'=> 'staff3'),
+																  		null,
+															 			array('class'=>'form-control',
+															 				  'style'=>'width:200px' ))
+										 }}							
+									</div>
 
-						<div class="form-group">
-							<label for="rooms" style="display:block"> Assign Room</label>
-							<input type="text" name="room" id="room">
-						</div>
-						
-						<div class="form-group">
-							<label for="task"> Task</label>
-							<div>
-								<span><input type="checkbox" id="chckall"> check all </span>
-								<hr>						
+									<div class="form-group">
+										{{ form::label('room', 'Assign Room') }}
+										<br>
+										{{ Form::text('room','',array('id'=>'room',
+																	  'name'=>'room',
+																	  'placeholder'=>'Room to assign'))
+										}}							
+									</div>						
+									<div class="form-group">
+										{{ form::label('task', 'Task') }}
+										<div>
+											{{ Form::checkbox('chckall', 'Check all', false, array('id'=>'chckall')) }}
+												{{ Form::label('chckall', 'Check all') }}
+											<hr>						
+										</div>
+									</div>
+									<div class="form-group">
+										<ul class="nav nav-pills nav-stacked">
+											<li>{{ form::checkbox('chcktask','Changing the bed linen', false ,array('class'=>'chckTask')) }} Changing the bed linen</li>
+											<li>{{ form::checkbox('chcktask','Making beds', false ,array('class'=>'chckTask')) }} Making beds</li>
+											<li>{{ form::checkbox('chcktask','Vacuuming floors', false ,array('class'=>'chckTask')) }} Vacuuming floors</li>
+											<li>{{ form::checkbox('chcktask','Treating stains or damage to polished wood', false ,array('class'=>'chckTask')) }} Treating stains or damage to polished wood</li>
+											<li>{{ form::checkbox('chcktask','replenishing stocks of guest supplies such as shampoo and soap', false ,array('class'=>'chckTask')) }} replenishing stocks of guest supplies such as shampoo and soap</li>
+											<li>{{ form::checkbox('chcktask','re-stocking drinks in the mini-bar', false ,array('class'=>'chckTask')) }} re-stocking drinks in the mini-bar</li>
+										</ul>						
+									</div>
+									<div class="form-group">
+										<button type="submit" name="btnsubmit" id="btnsubmit" class="btn btn-success">Assign</button>
+									</div>
+								{{ Form::close() }}					
 							</div>
-						</div>
-						<div class="form-group">
-							<ul class="nav nav-pills nav-stacked">
-								<li><span><input type="checkbox" class="chckTask" value="Changing the bed linen"> Changing the bed linen </span></li>
-								<li><span><input type="checkbox" class="chckTask" value="Making beds"> Making beds </span></li>
-								<li><span><input type="checkbox" class="chckTask" value="Vacuuming floors"> Vacuuming floors </span></li>
-								<li><span><input type="checkbox" class="chckTask" value="Treating stains or damage to polished wood"> Treating stains or damage to polished wood </span></li>
-								<li><span><input type="checkbox" class="chckTask" value="replenishing stocks of guest supplies such as shampoo and soap"> replenishing stocks of guest supplies such as shampoo and soap </span></li>
-								<li><span><input type="checkbox" class="chckTask" value="re-stocking drinks in the mini-bar"> re-stocking drinks in the mini-bar </span></li>
-							</ul>						
-						</div>
-						<div class="form-group">
-							<button type="submit" name="btnsubmit" id="btnsubmit" class="btn btn-success">Assign</button>
-						</div>
-					</form>					
-				</div>				
+					 	</div>  <!-- tabpane assign-->
+
+						<div class="tab-pane" id="hkdetails">
+							<!-- should be loop the result -->
+						 	<table class="table table-hover">
+							 	<tr>
+							 		<th>Status</th>
+							 		<th>Room</th>
+							 		<th>Category</th>
+							 		<th>Arrival</th>
+							 		<th>Departure</th>
+							 		<th>Person</th>
+							 		<th>Name</th>
+							 		<th>Note</th>
+							 	</tr>
+							 	<tr>
+							 		<td>Occupied</td>
+							 		<td>101</td>
+							 		<td>Delux Room</td>
+							 		<td>06/19/14</td>
+							 		<td>06/25/14</td>
+							 		<td>1</td>
+							 		<td>Marc Comia</td>
+							 		<td> -- </td>	
+							 	</tr>
+							 	<tr>
+							 		<td>Out of Order</td>
+							 		<td>102</td>
+							 		<td>Superior Room</td>
+							 		<td> -- </td>
+							 		<td> -- </td>
+							 		<td> -- </td>
+							 		<td> -- </td>
+							 		<td> Renovation </td>	
+							 	</tr>
+							</table>
+						</div> <!-- tab hkdetails -->
+				</div> <!-- tabcontent -->								
 			</div>
 		</div>
 	</div>
