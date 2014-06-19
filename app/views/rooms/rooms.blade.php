@@ -1,12 +1,38 @@
 @extends('layouts.master')
 @section('header')
 	@include('includes.header')
+				<div class="fontello-small">
+					<a href="/rooms/create">
+						<div class="panel panel-prop" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Add Room">
+							<div class="icn-prop">
+								<center>
+								<font color="#c94431">
+									<span class="icon-plus">
+									</span>
+								</font>
+							</center>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="fontello-small">
+					<a href="/roomlist">
+						<div class="panel panel-prop" data-container="body" data-toggle="popover" data-placement="bottom" data-content="List View Mode">
+							<div class="icn-prop">
+								<center>
+								<font color="#c94431">
+									<span class="icon-list-bullet">
+									</span>
+								</font>
+							</center>
+							</div>
+						</div>
+					</a>
+				</div>
 	</div>
 </div>
 @stop
-@section('form-options')
-	@include('includes.form-options')
-@stop
+
 @section('form')
 	<div class="row">
 		<div class="well roomsContainer">

@@ -13,6 +13,7 @@
 
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
+Route::get('roomlist', 'RoomsController@roomlist');
 
 Route::get('/',function()
 	{
@@ -20,4 +21,3 @@ Route::get('/',function()
 	});
 Route::get('housekeeping', 'PageController@houseKeeping');
 Route::get('new-reservation', 'PageController@newReservation');
-// Route::get('roomdetails', 'roomsController@details');
