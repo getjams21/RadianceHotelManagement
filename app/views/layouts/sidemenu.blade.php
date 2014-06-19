@@ -2,7 +2,7 @@
 	<center>
 		<div class="well side-col">
 			<div class="row">
-				<span class="icon-settings fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Set the basic data of hotel bookings"></span>
+				<a href="/settings"><span class="icon-settings fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Set the basic data of hotel bookings"></span></a>
 			</div>
 			<div class="row">
 				<span class="icon-search fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Search for details about hotel rooms such as facilities, room rates, room conditions, and services"></span>

@@ -15,6 +15,14 @@ class RoomsController extends \BaseController {
 			'icon'=>'icon-login'
 			]);
 	}
+	public function roomlist()
+	{
+		return View::make('rooms.roomlist', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Rooms',
+			'icon'=>'icon-login'
+			]);
+	}
 
 
 	/**
@@ -24,7 +32,12 @@ class RoomsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('rooms.create', [
+			'roomno' => '05',
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Rooms',
+			'icon'=>'icon-login'
+			]);
 	}
 
 
@@ -47,9 +60,13 @@ class RoomsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		return View::make('rooms.roomdetails', [
+			'roomno' => $id,
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Rooms',
+			'icon'=>'icon-login'
+			]);
 	}
-
 
 	/**
 	 * Show the form for editing the specified resource.

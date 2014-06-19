@@ -1,5 +1,5 @@
 <footer><div class="breadcrumb footer navbar-fixed-bottom form-footer ">
-	<div id="copyright text-right"><h4>© Copyright 2013 Radiance Hotel</h4></div>
+	<div id="copyright text-right"><h4>© Copyright 2014 Radiance Hotel</h4></div>
 </div>
 		{{ HTML::script('_/js/bootstrap.js') }}
 		{{ HTML::script('_/js/bootstrap-datepicker.js') }}

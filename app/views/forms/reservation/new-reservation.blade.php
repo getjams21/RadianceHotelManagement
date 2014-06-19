@@ -3,7 +3,7 @@
 @section('header')
 		@include('includes.header')
 			<div class="fontello-small">
-					<div class="panel panel-prop" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Guest">
+					<a href="/guest"><div class="panel panel-prop" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Guest">
 						<div class="icn-prop">
 							<center>
 							<font color="#c94431">
@@ -12,7 +12,7 @@
 							</font>
 						</center>
 						</div>
-					</div>
+					</div></a>
 			</div>
 		</div>
 	</div>		
