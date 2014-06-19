@@ -32,6 +32,10 @@
 </div>
 @stop
 
+@section('form-options')
+	@include('includes.form-options')
+@stop
+
 @section('form')
 	<div class="row">
 		<div class="well form-bg">
@@ -41,7 +45,7 @@
 						<thead>
 							<tr>
 								<th> <h4>Guest Name</h4></th>
-								<th class="tbl-prop"><h4>Guest Contact Number</b></h4></th>
+								<th class="tbl-prop"><h4>Contact Number</b></h4></th>
 								<th class="tbl-prop"><h4>Check In</h4></th>
 								<th class="tbl-prop"><h4>Check Out</h4></th>
 								<th class="tbl-prop"><h4>Adults</h4></th>
@@ -68,6 +72,34 @@
 								<td class="tbl-prop">0.00</td>
 								<td class="tbl-prop">June 17, 2014</td>
 								<td class="tbl-prop">Staff</td>
+							</tr>
+							<tr class="warning">
+								<td class="tbl-prop">Marc Comia</td>
+								<td class="tbl-prop">09261457845</td>
+								<td class="tbl-prop">June 23, 2014</td>
+								<td class="tbl-prop">June 24, 2014</td>
+								<td class="tbl-prop">2</td>
+								<td class="tbl-prop">0</td>
+								<td class="tbl-prop">5%</td>
+								<td class="tbl-prop">2,200.00</td>
+								<td class="tbl-prop">1,000.00</td>
+								<td class="tbl-prop">1.200.00</td>
+								<td class="tbl-prop">June 15, 2014</td>
+								<td class="tbl-prop">Admin</td>
+							</tr>
+							<tr class="danger">
+								<td class="tbl-prop">Tsin Batiancila</td>
+								<td class="tbl-prop">09081457845</td>
+								<td class="tbl-prop">June 23, 2014</td>
+								<td class="tbl-prop">June 24, 2014</td>
+								<td class="tbl-prop">2</td>
+								<td class="tbl-prop">1</td>
+								<td class="tbl-prop">5%</td>
+								<td class="tbl-prop">2,700.00</td>
+								<td class="tbl-prop">0.00</td>
+								<td class="tbl-prop">2.700.00</td>
+								<td class="tbl-prop">June 15, 2014</td>
+								<td class="tbl-prop">Admin</td>
 							</tr>
 						</tbody>
 					</table>

@@ -4,6 +4,9 @@
 	</div>
 </div>
 @stop
+@section('form-options')
+	@include('includes.form-options')
+@stop
 @section('form')
 	<div class="row">
 		<div class="well">

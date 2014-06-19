@@ -17,7 +17,8 @@
 		    <div class="col-xs-12 col-sm-6 col-md-9">
 					<div class="well formx">
 						<div class="container-fluid onload-slide ">
-			    			@yield('form')
+							@yield('form-options')
+							@yield('form')
 		    			</div>
 		    	</div>
 		    </div>
