@@ -37,3 +37,7 @@
 .icon-trash-1:before { content: '\e823'; } /* '' */
 .icon-spin3:before { content: '\e824'; } /* '' */
 .icon-lock-circled:before { content: '\e825'; } /* '' */
+.icon-list-numbered:before { content: '\e826'; } /* '' */
+.icon-list-bullet:before { content: '\e827'; } /* '' */
+.icon-undo:before { content: '\e828'; } /* '' */
+.icon-fast-backward:before { content: '\e829'; } /* '' */

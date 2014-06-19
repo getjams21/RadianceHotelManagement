@@ -14,7 +14,7 @@
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
 Route::resource('settings', 'SidebarController');
-
+Route::get('roomlist', 'RoomsController@roomlist');
 Route::get('/',function()
 	{
 		return Redirect::route('page.index');
@@ -22,4 +22,4 @@ Route::get('/',function()
 Route::get('housekeeping', 'PageController@houseKeeping');
 Route::get('new-reservation', 'PageController@newReservation');
 Route::get('guest', 'PageController@guest');
-// Route::get('roomdetails', 'roomsController@details');
+
