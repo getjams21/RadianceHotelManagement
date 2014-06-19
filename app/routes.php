@@ -13,7 +13,7 @@
 
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
-Route::resource('settings', 'SettingsController');
+Route::resource('settings', 'SidebarController');
 
 Route::get('/',function()
 	{
