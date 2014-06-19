@@ -5,7 +5,7 @@
 				<a href="/settings"><span class="icon-settings fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Set the basic data of hotel bookings"></span></a>
 			</div>
 			<div class="row">
-				<a href="rooms/vacant"><span class="icon-search fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Search for details about hotel rooms such as facilities, room rates, room conditions, and services"></span></a>
+				<a href="/vacant"><span class="icon-search fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Search for details about hotel rooms such as facilities, room rates, room conditions, and services"></span></a>
 			</div>
 			<div class="row">
 				<span class="icon-picture fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Show pictures of hotel, resort, rooms and services"></span>
