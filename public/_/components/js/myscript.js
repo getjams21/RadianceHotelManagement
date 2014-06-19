@@ -57,9 +57,34 @@ $(document).ready(function(){
 		$('#datepicker').datepicker();
 		$('#datepicker2').datepicker();
 
-		//functions to run during page load
-		// $(window).load(function(){
-		    //form animation
-		$(".onload-slide").animate({width:'100%',opacity:'1'}, 500);
-		// });
+		$(window).load(function(){
+			$(".onload-slide")
+				.animate({width:'100%',opacity:'1'}, 500);
+		});
+
+});
+
+
+$(document).ready(function(){
+	/*
+	 Author:marc comia
+	 description: checkbox for houssekeeping
+	*/
+	$('#chckall').click(function() {
+		if($(this).is(':checked')) {
+			$('.chckTask').each(function() {
+				$(this).prop('checked','true');
+				} );
+		}else {
+			$('.chckTask').each(function(){
+				$(this).removeAttr('checked');
+				});
+		}
+	});
+
+	$('.chckTask').change(function() {
+    	if(!$(this).is(':checked')){
+    		$('#chckall').removeAttr('checked');
+    	}
+    } );
 });

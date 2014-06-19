@@ -10,14 +10,14 @@
 	</div>
 	<div class="col-xs-8">
 		<div class="fontello-small">
-					<div class="panel panel-prop" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Notification">
-						<div class="icn-prop">
-							<center>
-							<font color="#c94431">
-								<span class="icon-bell-alt">
-								</span>
-							</font>
-						</center>
-						</div>
-					</div>
+			<div class="panel panel-prop" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Notification">
+				<div class="icn-prop">
+					<center>
+					<font color="#c94431">
+						<span class="icon-bell-alt">
+						</span>
+					</font>
+				</center>
+				</div>
+			</div>
 		</div>

@@ -18,6 +18,10 @@
 	</div>		
 @stop
 
+@section('form-options')
+	@include('includes.form-options')
+@stop
+
 @section('form')
 	<div class="row">
 	<div class="well form-bg">
@@ -45,7 +49,9 @@
 							{{ Form::text('Streetaddress2','',array('class'=>'span3 form-control textbox-control-l','placeholder'=>'Street Address 2')) }}
 							<div class="form-inline">
 								{{ Form::text('City','',array('class'=>'span3 form-control','placeholder'=>'City')) }}
+								<br>
 								{{ Form::text('Stateprovince','',array('class'=>'span3 form-control','placeholder'=>'State/Province')) }}
+								<br>
 								{{ Form::text('Country','',array('class'=>'span3 form-control','placeholder'=>'Country')) }}						</div>
 						</div>
 						<div class="form-group">
