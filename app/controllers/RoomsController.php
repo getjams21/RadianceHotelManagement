@@ -23,6 +23,9 @@ class RoomsController extends \BaseController {
 			'icon'=>'icon-login'
 			]);
 	}
+	
+	public function save(){
+	}
 
 
 	/**
@@ -51,7 +54,13 @@ class RoomsController extends \BaseController {
 		//
 	}
 
-
+public function vacant(){
+		return View::make('rooms.vacant', [
+			'title'=>'Radiance Hotel',
+			'subtitle'=>'Room Search',
+			'icon'=>'icon-search'
+			]);
+	}
 	/**
 	 * Display the specified resource.
 	 *
@@ -103,12 +112,6 @@ class RoomsController extends \BaseController {
 		//
 	}
 
-	public function vacant(){
-		return View::make('rooms.vacant', [
-			'title'=>'Radiance Hotel',
-			'subtitle'=>'Room Search',
-			'icon'=>'icon-search'
-			]);
-	}
+	
 
 }

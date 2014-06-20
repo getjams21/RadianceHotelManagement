@@ -13,8 +13,9 @@
 		<div class="well form-bg">
 			<div class="container-fluid">
 			<font color="#161515">
-				{{ Form::open(['route'=>'rooms.vacant', 'class'=>'form-horizontal', 'rule'=>'form']) }}
+				{{ Form::open(['url'=>'/vacant', 'class'=>'form-horizontal', 'rule'=>'form']) }}
 					Room Vacancies
+					
 				{{ Form::close() }}
 			</font><!-- default font color for body -->
 			</div>
