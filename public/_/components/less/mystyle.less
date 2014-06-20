@@ -165,7 +165,8 @@ hr{
 	height:80px;
 	border-radius:5px;
 	font-size:25px;
-	padding-left:5px; 
+	padding-left:5px;
+	margin-top: 10px; 
 }
 .room-icn-prop{
 	padding-top: 14px;
@@ -218,21 +219,26 @@ hr{
 	z-index: 4;
 	background-color: rgba(0,0,0,0.2);
 	position: absolute;
-	width: 516px;
+	width: 0px;
+	/*width: 516px;*/
 	height: 25px;
 	margin-left: -4px;
 	margin-top: 15px;
+	opacity: 0;
 }
 .option-circle{
-	z-index: 6;
+	display: none;
 	background-color: white;
 	position: absolute;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	margin-left: 440px;
 	-moz-box-shadow: 0 0 7px 0px #999;
 	-webkit-box-shadow: 0 0 7px 0px #999;
+}
+.opt-last{
+	z-index: 6;
+	margin-left: 440px;
 }
 .opt-third{
 	z-index: 6;

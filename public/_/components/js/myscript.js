@@ -54,37 +54,70 @@ $(document).ready(function(){
 			}
 		);
 
-		$('#datepicker').datepicker();
-		$('#datepicker2').datepicker();
+		//datepickers
+		$('#datepicker, #dpTo, #datepicker2, #dpFrom').datepicker();
 
 		$(window).load(function(){
 			$(".onload-slide")
 				.animate({width:'100%',opacity:'1'}, 500);
 		});
 
+		//show popover for form options
+		$(".option-circle").hover(
+			function(){
+				$(this).popover('show');
+			},
+			function(){
+				$(this).popover('hide');
+			}
+		);
+		//show options for 
+		$('.tbl-prop').click(function(){
+			$('.form-option').animate({width:'516px',opacity:'1'}, 500);
+			$('.option-circle').show();
+		});
+
+		//close options (add,edit,delete,cancel)
+		$('.opt-last').click(function(){
+			$('.form-option').animate({width:'0px',opacity:'0'}, 500);
+			$('.option-circle').hide();
+		});
+
+		/*
+		 Author:marc comia
+		 description: checkbox for houssekeeping
+		*/
+		$('#chckall').click(function() {
+			if($(this).is(':checked')) {
+				$('.chckTask').each(function() {
+					$(this).prop('checked','true');
+					} );
+			}else {
+				$('.chckTask').each(function(){
+					$(this).removeAttr('checked');
+					});
+			}
+		});
+
+		$('.chckTask').change(function() {
+	    	if(!$(this).is(':checked')){
+	    		$('#chckall').removeAttr('checked');
+	    	}
+	    } );
+
+	    //custom button properties for reservation
+	    $('#dpFrom,#dpTo').hide();
+	    $('.btn-custom').click(function() {
+	    	$('.btn-selection').removeClass('active');
+	    	$(this).addClass('active');
+	    	$('.slct-prop').hide();
+	    	$('#dpFrom,#dpTo').show();
+	    });
+	    $('.btn-selection').click(function() {
+	    	$('.btn-custom').removeClass('active');
+	    	$(this).addClass('active');
+	    	$('.slct-prop').show();
+	    	$('#dpFrom,#dpTo').hide();
+	    });
 });
 
-
-$(document).ready(function(){
-	/*
-	 Author:marc comia
-	 description: checkbox for houssekeeping
-	*/
-	$('#chckall').click(function() {
-		if($(this).is(':checked')) {
-			$('.chckTask').each(function() {
-				$(this).prop('checked','true');
-				} );
-		}else {
-			$('.chckTask').each(function(){
-				$(this).removeAttr('checked');
-				});
-		}
-	});
-
-	$('.chckTask').change(function() {
-    	if(!$(this).is(':checked')){
-    		$('#chckall').removeAttr('checked');
-    	}
-    } );
-});

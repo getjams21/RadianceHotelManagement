@@ -9,7 +9,9 @@ class PageController extends BaseController {
 			'icon'=>'icon-book'
 			]);
 	}
-
+	public function search(){
+		return Redirect::back();
+	}
 	public function store(){
 		return Redirect::back();
 	}
