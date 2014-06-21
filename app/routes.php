@@ -14,10 +14,10 @@
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
 Route::get('vacant', 'RoomsController@vacant');
+Route::post('vacant', 'PageController@save');
 Route::resource('settings', 'SidebarController');
 
 Route::post('reservation-search', 'PageController@search');
-Route::get('vacant', 'RoomsController@vacant');
 Route::get('roomlist', 'RoomsController@roomlist');
 Route::get('/',function()
 	{

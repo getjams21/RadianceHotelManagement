@@ -59,7 +59,7 @@
 					<hr>
 					<!-- FORM STARTS HERE -->
 		{{ Form::open(['route'=>'page.store', 'class'=>'form-horizontal', 'rule'=>'form']) }}
-		<div class="room-form col-md-12" <?php if($roomno != 1&&$roomno != 2&&$roomno != 3&&$roomno != 4&&$roomno != 5){echo "hidden";}?>>
+		<div class="room-form col-md-12" <?php if($roomno != 1&&$roomno != 2&&$roomno != 3&&$roomno != 4){echo "hidden";}?>>
 		<div class="col-md-6" >
 				<div class="form-group">
 					<label><h4>Room Name</h4></label>
