@@ -8,7 +8,7 @@
 		{{ HTML::style('fontello/css/settings.css') }}
 	</head>
 
-	<body class="img-responsive" bgproperties="fixed">
+	<body class="img-responsive" bgproperties="fixed" background="/_/fonts/images/dining.PNG">
 		<font face="Segoe UI" color="White">
 		@yield('header')
 		<div class="container-fluid">
