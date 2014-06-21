@@ -23,7 +23,7 @@
 	<div class="row">
 		<div class="well roomsContainer">
 			<div class="container-fluid">
-				<div class="panel panel-prop room <?php if($roomno == 1){echo "room-vacant";} else if($roomno == 2){echo "room-occupied";}if($roomno == 3){echo "room-alert";}if($roomno == 4){echo "room-process";} ?>" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Room No {{ $roomno }}">
+				<div class="panel panel-prop room <?php if($roomno == 1){echo "room-vacant";} else if($roomno == 2){echo "room-occupied";}if($roomno == 3){echo "room-alert";}if($roomno == 4){echo "room-process";} ?>" data-container="body" data-toggle="popover" data-placement="bottom" data-content="{{ $roomno }}" >
 							<div class="icn-prop">
 								<center>
 									<font color="<?php if($roomno == 3 || $roomno == 4){echo "white";} else{echo "#c94431";}?>">
@@ -44,7 +44,7 @@
 	<div class="well form-bg">
 		<div class="container-fluid">
 			<font color="#161515">
-				<div class="form-group"><h4> <span><?php if($roomno==2){echo "Current Guest: <b>Jaymar Cansancio </b>";}else if($roomno==1){echo "Status: <b>Vacant</b>";}else if($roomno==3){echo "Status: <b> Housekeeper alert</b>";}else if($roomno==4){echo "Status: <b>Cleaning...</b>";}?></span> </h4>
+				<div class="form-group"><h4> <span><?php if($roomno==2){echo "Current Guest: <b>Jaymar Cansancio </b>";}else if($roomno==1){echo "Status: <b>Vacant</b>";}else if($roomno==3){echo "Status: <b> Housekeeper alert</b>";}else if($roomno==4){echo "Status: <b>Cleaning...</b>";}else {echo "<b>Room Does Not Exist</b>";}?></span> </h4>
 
  		<?php if($roomno == 3){?>
 						<p>{{ Form::label('housekeeper', 'choose a Housekeeper to change the Status: ') }}
@@ -59,7 +59,8 @@
 					<hr>
 					<!-- FORM STARTS HERE -->
 		{{ Form::open(['route'=>'page.store', 'class'=>'form-horizontal', 'rule'=>'form']) }}
-					<div class="col-md-6">
+		<div class="room-form" <?php if($roomno != 1&&$roomno != 2&&$roomno != 3&&$roomno != 4&&$roomno != 5){echo "hidden";}?>>
+		<div class="col-md-6">
 				<div class="form-group">
 					<label><h4>Room Name</h4></label>
 						<div class="form-inline" >
@@ -98,6 +99,7 @@
 					<label><h4>Rate: <font color="#c94431"><b>Php 500.00</b></font></h4></label>
 				</div>
 								
+	</div>
 	</div>
 			</div>
 		</div>

@@ -36,7 +36,10 @@
 @section('form')
 	<div class="row">
 		<div class="well roomsContainer">
+			<div class="well form-bg">
 			<div class="container-fluid">
+			<font color="#161515"><h4><b>First Floor</b> </h4>
+				<hr>
 				<!-- Room 01 -->
 				<a href="/rooms/01">
 					<div class="panel panel-prop room room-vacant" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vacant">
@@ -105,6 +108,7 @@
 						</div>
 					</div>
 				</a>
+			</div></font>
 			</div>
 		</div>
 	</div>

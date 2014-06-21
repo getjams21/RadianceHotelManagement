@@ -15,13 +15,7 @@ class RoomsController extends \BaseController {
 			'icon'=>'icon-login'
 			]);
 	}
-	public function vacant(){
-		return View::make('rooms.vacant', [
-			'title'=>'Radiance Hotel',
-			'subtitle'=>'Room Search',
-			'icon'=>'icon-search'
-			]);
-	}
+
 	public function roomlist()
 	{
 		return View::make('rooms.roomlist', [
@@ -58,10 +52,10 @@ class RoomsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		return Redirect::to('rooms');
 	}
 
-public function vacant(){
+	public function vacant(){
 		return View::make('rooms.vacant', [
 			'title'=>'Radiance Hotel',
 			'subtitle'=>'Room Search',
@@ -118,3 +112,4 @@ public function vacant(){
 	{
 		//
 	}
+}

@@ -13,10 +13,8 @@
 
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
-Route::post('vacant', 'RoomsController@store');
 Route::get('vacant', 'RoomsController@vacant');
 Route::resource('settings', 'SidebarController');
-//Route::post('vacant', 'RoomsController@store');
 Route::get('vacant', 'RoomsController@vacant');
 Route::get('roomlist', 'RoomsController@roomlist');
 Route::get('/',function()
