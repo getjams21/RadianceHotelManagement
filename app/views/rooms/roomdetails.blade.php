@@ -52,15 +52,15 @@
 
 							{{ Form::Button('Start',['class'=>'btn btn-success ']) }}
 		<?php }else if($roomno == 4){?>
-						<p>{{ Form::label('housekeeper', 'Click the done button to change the Status to Vacant: ') }}
+						<p>{{ Form::label('housekeeper', 'Click the done button to change the Status: ') }}
 							{{ Form::select('housekeeper', ['Marc Comia', 'Anna Yu','Marz Cansancio'], 1, ['class' => 'span3 form-control textbox-control-m','disabled']) }}</p>
 							{{ Form::Button('Done',['class'=>'btn btn-success ']) }}
 		<?php }?>
 					<hr>
 					<!-- FORM STARTS HERE -->
 		{{ Form::open(['route'=>'page.store', 'class'=>'form-horizontal', 'rule'=>'form']) }}
-		<div class="room-form" <?php if($roomno != 1&&$roomno != 2&&$roomno != 3&&$roomno != 4&&$roomno != 5){echo "hidden";}?>>
-		<div class="col-md-6">
+		<div class="room-form col-md-12" <?php if($roomno != 1&&$roomno != 2&&$roomno != 3&&$roomno != 4&&$roomno != 5){echo "hidden";}?>>
+		<div class="col-md-6" >
 				<div class="form-group">
 					<label><h4>Room Name</h4></label>
 						<div class="form-inline" >
@@ -101,14 +101,14 @@
 								
 	</div>
 	</div>
-			</div>
+			</div></font>
 		</div>
 	</div>
 </div>
 		{{ Form::close() }}
 
 
-		</font>
+		
 			<a href="/rooms">
 				<div  class="panel panel-prop room room-alert back" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Back">
 						<div class="icn-prop">

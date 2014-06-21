@@ -13,7 +13,7 @@
 		<div class="well form-bg">
 			<div class="container-fluid">
 			<font color="#161515">
-				{{ Form::open(['url'=>'/vacant', 'class'=>'form-horizontal', 'rule'=>'form']) }}
+				{{ Form::open(['route'=>'vacant', 'class'=>'form-horizontal', 'rule'=>'form']) }}
 
 					Room Vacancies
 					

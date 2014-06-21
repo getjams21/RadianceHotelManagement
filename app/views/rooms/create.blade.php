@@ -48,7 +48,7 @@
 						<font color="#161515"><hr>
 			{{ Form::open(['route'=>'rooms.store', 'class'=>'form-horizontal', 'rule'=>'form']) }}
 				
-				<div class="col-md-6">
+				<div class="col-md-6" style="width:40%;">
 					<div class="form-group">
 						<label><h4>Room Name</h4></label>
 							<div class="form-inline" >
