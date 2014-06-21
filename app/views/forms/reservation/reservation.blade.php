@@ -46,9 +46,8 @@
 				<div class="col-md-12">
 					{{ Form::open(['url'=>'reservation-search','class'=>'form-horizontal','rule'=>'form']) }}
 					<div class="form-group">
-						<span><h4>Booking Time</h4></span>
+						<span><h4>Search Method:</h4></span>
 						<div class="btn-group form-inline">
-							<span> <h5>Search Method</h5> </span>
 							<button type="button" class="btn btn-default btn-selection active">Selection</button>
 							<button type="button" class="btn btn-default btn-custom">Custom</button>
 						</div>
@@ -69,6 +68,12 @@
 							</div>
 							<div class='input-group date'>
 							 {{ Form::text('ToDate','',array('class'=>'span3 form-control','placeholder'=>'To', 'id'=>'dpTo')) }}
+							</div>
+							<div class="input-group">
+								{{ Form::text('Guest','',array('class'=>'span3 form-control textbox-control-m','placeholder'=>'Guest Name', 'id'=>'cust-guest')) }}
+							</div>
+							<div class="input-group">
+								{{ Form::text('Room','',array('class'=>'span3 form-control textbox-control-m','placeholder'=>'Room', 'id'=>'cust-room')) }}
 							</div>
 							{{ Form::Submit('Search',['class'=>'icon-search btn btn-success']) }}
 						</div>

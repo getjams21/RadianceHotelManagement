@@ -11,7 +11,7 @@
 				<span class="icon-picture fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Show pictures of hotel, resort, rooms and services"></span>
 			</div>
 			<div class="row">
-				<span class="icon-user-male fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Setup and split licensing of log in for the users"></span>
+				<a href="/staffs"><span class="icon-user-male fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Setup and split licensing of log in for the users"></span></a>
 			</div>
 			<div class="row">
 				<span class="icon-money fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Costs of booking calculation. Costs of hotel room and also add costs of additional service"></span>

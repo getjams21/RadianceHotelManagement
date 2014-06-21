@@ -106,18 +106,18 @@ $(document).ready(function(){
 	    } );
 
 	    //custom button properties for reservation
-	    $('#dpFrom,#dpTo').hide();
+	    $('#dpFrom,#dpTo,#cust-guest,#cust-room').hide();
 	    $('.btn-custom').click(function() {
 	    	$('.btn-selection').removeClass('active');
 	    	$(this).addClass('active');
 	    	$('.slct-prop').hide();
-	    	$('#dpFrom,#dpTo').show();
+	    	$('#dpFrom,#dpTo,#cust-guest,#cust-room').show();
 	    });
 	    $('.btn-selection').click(function() {
 	    	$('.btn-custom').removeClass('active');
 	    	$(this).addClass('active');
 	    	$('.slct-prop').show();
-	    	$('#dpFrom,#dpTo').hide();
+	    	$('#dpFrom,#dpTo,#cust-guest,#cust-room').hide();
 	    });
 });
 
