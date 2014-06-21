@@ -14,6 +14,7 @@
 			<div class="container-fluid">
 			<font color="#161515">
 				{{ Form::open(['url'=>'/vacant', 'class'=>'form-horizontal', 'rule'=>'form']) }}
+
 					<h3> <span>First Floor</span> </h3>
 					<hr>
 					<a href="/rooms/01">
@@ -47,6 +48,7 @@
 							</center>
 						</div>
 					</div>
+					</a>
 					<a href="/rooms/07">
 					<div class="panel panel-prop room room-vacant">
 						<div class="icn-prop">
@@ -62,7 +64,6 @@
 							</center>
 						</div>
 					</div>
-					</a>
 					</a>
 				{{ Form::close() }}
 			</div>

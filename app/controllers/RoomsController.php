@@ -18,10 +18,11 @@ class RoomsController extends \BaseController {
 	public function vacant(){
 		return View::make('rooms.vacant', [
 			'title'=>'Radiance Hotel',
-			'subtitle'=>'Vacant Rooms',
+			'subtitle'=>'Room Search',
 			'icon'=>'icon-search'
 			]);
 	}
+
 	public function roomlist()
 	{
 		return View::make('rooms.roomlist', [
@@ -29,6 +30,10 @@ class RoomsController extends \BaseController {
 			'subtitle'=>'Rooms',
 			'icon'=>'icon-login'
 			]);
+	}
+	
+	public function save(){
+		return Redirect::to('rooms');
 	}
 
 
@@ -55,10 +60,10 @@ class RoomsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		return Redirect::to('rooms');
 	}
 
-
+	
 	/**
 	 * Display the specified resource.
 	 *
@@ -109,5 +114,4 @@ class RoomsController extends \BaseController {
 	{
 		//
 	}
-
 }
