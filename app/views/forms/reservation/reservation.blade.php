@@ -39,8 +39,45 @@
 @section('form')
 	<div class="row">
 		<div class="well form-bg">
+			<font color="#161515">
+			<div class="row container-fluid">
+				<span> <h4>Search for Reservations</h4> </span>
+				<hr>
+				<div class="col-md-12">
+					{{ Form::open(['url'=>'reservation-search','class'=>'form-horizontal','rule'=>'form']) }}
+					<div class="form-group">
+						<span><h4>Booking Time</h4></span>
+						<div class="btn-group form-inline">
+							<span> <h5>Search Method</h5> </span>
+							<button type="button" class="btn btn-default btn-selection active">Selection</button>
+							<button type="button" class="btn btn-default btn-custom">Custom</button>
+						</div>
+						<div class="form-inline">
+							<br>
+							{{ Form::select('Booking', [
+							   'Today' => 'Today',
+							   'Yesterday' => 'Yesterday',
+							   'Thisweek' => 'This Week',
+							   'Lastweek' => 'Last Week',
+							   'Thismonth' => 'This Month',
+							   'Lastmonth' => 'Last Month',
+							   'Thisyear' => 'This Year'],
+							   '', ['class' => 'form-control slct-prop']
+							) }}
+							<div class='input-group date'>
+			                    {{ Form::text('FromDate','',array('class'=>'span3 form-control','placeholder'=>'From', 'id'=>'dpFrom')) }}
+							</div>
+							<div class='input-group date'>
+							 {{ Form::text('ToDate','',array('class'=>'span3 form-control','placeholder'=>'To', 'id'=>'dpTo')) }}
+							</div>
+							{{ Form::Submit('Search',['class'=>'icon-search btn btn-success']) }}
+						</div>
+					</div>
+					{{ Form::close() }}
+				</div>
+			</div>
+			<hr>
 			<div class="container-fluid table-bg">
-				<font color="#161515">
 					<table class="table table-hover">
 						<thead>
 							<tr>
