@@ -11,7 +11,9 @@
 				<span class="icon-picture fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Show pictures of hotel, resort, rooms and services"></span>
 			</div>
 			<div class="row">
-				<a href="/staffs"><span class="icon-user-male fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Setup and split licensing of log in for the users"></span></a>
+				<a href="/staffs">
+					<span class="icon-user-male fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Setup and split licensing of log in for the users"></span>
+				</a>
 			</div>
 			<div class="row">
 				<span class="icon-money fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Costs of booking calculation. Costs of hotel room and also add costs of additional service"></span>
@@ -20,7 +22,9 @@
 				<span class="icon-clipboard fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Calculate all incomes and summary the customer's service reports"></span>
 			</div>
 			<div class="row">
-				<span class="icon-mail fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Status notification services for the customers such as booking status and payment status via E-mail"></span>
+				<a href="/message">
+					<span class="icon-mail fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Status notification services for the customers such as booking status and payment status via E-mail"></span>
+				</a>
 			</div>
 			<div class="row">
 				<span class="icon-tag fontello-large icn-click" data-container="body" data-toggle="popover" data-placement="left" data-content="Set promotion such as free night, last minute or package"></span>

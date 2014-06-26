@@ -10,7 +10,10 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
+Route::get('/',function()
+	{
+		return Redirect::route('page.index');
+	});
 Route::resource('page', 'PageController');
 Route::resource('rooms', 'RoomsController');
 Route::get('vacant', 'RoomsController@vacant');
@@ -19,11 +22,8 @@ Route::resource('settings', 'SidebarController');
 Route::resource('staffs', 'UsersController');
 Route::post('reservation-search', 'PageController@search');
 Route::get('roomlist', 'RoomsController@roomlist');
-Route::get('/',function()
-	{
-		return Redirect::route('page.index');
-	});
 Route::get('housekeeping', 'PageController@houseKeeping');
 Route::get('new-reservation', 'PageController@newReservation');
 Route::get('guest', 'PageController@guest');
+Route::resource('message', 'MessageController');
 
